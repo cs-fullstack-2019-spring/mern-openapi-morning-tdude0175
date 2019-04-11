@@ -3,7 +3,7 @@ import CountryListing from "./CountryListing"
 import "../Country.css"
 export default class CountryStyling extends Component
 {
-
+    //attaches css
 
     render() {
         return (

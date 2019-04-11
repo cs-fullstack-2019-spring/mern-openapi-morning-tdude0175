@@ -4,6 +4,7 @@ import React, {Component} from "react";
 export default class CountryListing extends Component {
 
     render() {
+        //maps the data for display
         var dataMapping = this.props.data.map((country, index) => {
             let languages = country.languages;
             let spoken = languages.length;

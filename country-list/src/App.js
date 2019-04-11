@@ -12,7 +12,7 @@ class App extends Component {
             }
 
     }
-
+    //gathers data every time the page is rendered
     getData = () =>
     {
         fetch("https://restcountries.eu/rest/v2/all")
@@ -22,7 +22,8 @@ class App extends Component {
     componentDidMount() {
         this.getData()
     }
-
+    // filters through the data based on button pressed and feeds it into the state to send down to next component
+    // with the desired info to render
     ChangeListed =(e)=>
     {
         var filteredData = [];
